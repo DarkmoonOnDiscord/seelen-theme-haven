@@ -22,7 +22,7 @@ const Index = () => {
           playsInline
           className="w-full h-full object-cover blur-sm"
         >
-          <source src="src/video2/mylivewallpapers.com-Abstract-Waves-4K (1).mp4" type="video/mp4" />
+          <source src="https://github.com/DarkmoonOnDiscord/seelen-theme-haven/blob/6aa6c278e317838a3765b4921cf9d86c23daa525/src/video2/mylivewallpapers.com-Abstract-Waves-4K%20(1).mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
