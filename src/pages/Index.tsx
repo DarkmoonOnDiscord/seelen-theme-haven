@@ -7,9 +7,8 @@ const Index = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
-    // Add a timeout to help ensure video loads properly
-    const timer = setTimeout(() => setVideoLoaded(true), 300);
-    return () => clearTimeout(timer);
+    // Force video to be shown even if not fully loaded
+    setVideoLoaded(true);
   }, []);
 
   return (
@@ -21,23 +20,11 @@ const Index = () => {
           muted 
           loop 
           playsInline
-          className={`w-full h-full object-cover blur-sm transition-opacity duration-500 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
-          poster="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
-          onCanPlay={() => setVideoLoaded(true)}
+          className="w-full h-full object-cover blur-sm"
         >
-          <source src="https://media-hosting.imagekit.io/fd355ae74fa74b4d/abstract-monochrome-waves-moewalls-com.mp4" type="video/mp4" />
-          {/* Fallback image if video fails to load */}
+          <source src="/src/video2/video2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        
-        {/* Fallback if video doesn't load */}
-        {!videoLoaded && (
-          <img 
-            src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
-            alt="Tech background" 
-            className="w-full h-full object-cover blur-sm"
-          />
-        )}
       </div>
       
       {/* Overlay gradient */}
