@@ -49,8 +49,8 @@ export const themes: Theme[] = [
     id: "round-profile-image",
     title: "Rounded User Image",
     description: "Makes the user profile image rounded instead of squared in the toolbar.",
-    imageUrl: "/images/roundedprofile.png",
-    downloadUrl: "/themes/round-user-profile.yml",
+    imageUrl: "/roundedprofile.png",
+    downloadUrl: "/round-user-profile.yml",
     tags: ["Modern"]
   },
   {
