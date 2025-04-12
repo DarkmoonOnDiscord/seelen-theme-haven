@@ -14,17 +14,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-seelen-dark to-black relative">
       {/* Background video with overlay */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          className="w-full h-full object-cover blur-sm"
-        >
-          <source src="/src/video2/viiid.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="absolute inset-0 z-0 opacity-20">
+        <img 
+          src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          alt="background" 
+          className="w-full h-full object-cover"
+        />
       </div>
       
       {/* Overlay gradient */}
