@@ -1,0 +1,13 @@
+id: "@custom/round-user-profile"
+metadata:
+  displayName: Round user profile
+  author: FunTust
+  description: Make user profile round.
+  tags: ['toolbar']
+styles:
+  toolbar: |
+    #\@default\/user-folder .ft-bar-item-content img
+    {
+      object-fit: cover !important;
+      clip-path: circle(50% at 50% 50%);
+    }

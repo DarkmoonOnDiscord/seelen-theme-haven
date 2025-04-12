@@ -46,12 +46,12 @@ export interface Theme {
  */
 export const themes: Theme[] = [
   {
-    id: "neo-brutalism",
-    title: "Neo Brutalism",
-    description: "Bold colors with sharp edges, perfect for modern applications",
-    imageUrl: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1032&auto=format&fit=crop",
-    downloadUrl: "/themes/neo-brutalism.zip",
-    tags: ["bold", "modern", "colorful"]
+    id: "round-profile-image",
+    title: "Rounded User Image",
+    description: "Makes the user profile image rounded instead of squared in the toolbar.",
+    imageUrl: "/images/roundedprofile.png",
+    downloadUrl: "/themes/round-user-profile.yml",
+    tags: ["Modern"]
   },
   {
     id: "midnight-glass",
