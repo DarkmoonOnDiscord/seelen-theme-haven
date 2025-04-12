@@ -22,7 +22,7 @@ const Index = () => {
           playsInline
           className="w-full h-full object-cover blur-sm"
         >
-          <source src="https://media-hosting.imagekit.io/fd355ae74fa74b4d/abstract-monochrome-waves-moewalls-com.mp4" type="video/mp4" />
+          <source src="src/video2/mylivewallpapers.com-Abstract-Waves-4K (1).mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
