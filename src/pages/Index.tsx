@@ -22,7 +22,7 @@ const Index = () => {
           playsInline
           className="w-full h-full object-cover blur-sm"
         >
-          <source src="/src/video2/video2.mp4" type="video/mp4" />
+          <source src="https://media-hosting.imagekit.io/fd355ae74fa74b4d/abstract-monochrome-waves-moewalls-com.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -47,3 +47,4 @@ const Index = () => {
 };
 
 export default Index;
+
