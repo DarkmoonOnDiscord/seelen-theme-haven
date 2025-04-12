@@ -5,13 +5,19 @@ import ThemeGrid from "@/components/ThemeGrid";
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-seelen-dark to-black relative">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0 opacity-20">
-        <img 
-          src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
-          alt="Tech background" 
-          className="w-full h-full object-cover"
-        />
+      {/* Background video with overlay */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          className="w-full h-full object-cover blur-sm"
+          poster="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+        >
+          <source src="https://media-hosting.imagekit.io/fd355ae74fa74b4d/abstract-monochrome-waves-moewalls-com.mp4" type="video/mp4" />
+          {/* Fallback image if video fails to load */}
+          Your browser does not support the video tag.
+        </video>
       </div>
       
       {/* Overlay gradient */}
